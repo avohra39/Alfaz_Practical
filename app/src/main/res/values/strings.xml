@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alfaz Practical</string>
+    <string name="by_signing_up_to_aggree_with_terms_of_service_and_privacy_policy">By signing up to aggree with <u>Terms of Service</u>\nand <u>Privacy Policy</u></string>
+    <string name="please_enter_email">Please enter your Email id</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="password_must_be_long">Password should be 6 character long</string>
+    <string name="enter_confirm_password">Please enter confirm password</string>
+    <string name="password_did_not_match">Password didn\'t match</string>
+    <string name="please_agree_terms_and_conditions">Please agree to the Terms and Conditions</string>
+</resources>

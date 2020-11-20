@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_back"
+            app:tint="@android:color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:text="Personal Info"
+        android:textColor="#223748"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="We need your account information"
+        android:textColor="#78839A"
+        android:textSize="@dimen/_13sdp" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llMale"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/circle_gradient"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivMale"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_male" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFemale"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/ic_unselected"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivFemale"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_female" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:hint="First Name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/_8sdp"
+            android:textColorHint="#4D567D"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:hint="Last Name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/_8sdp"
+            android:textColorHint="#4D567D"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:hint="Location"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/_8sdp"
+            android:textColorHint="#4D567D"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:hint="Date of Birth"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/_8sdp"
+            android:textColorHint="#4D567D"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:orientation="vertical"
+        android:background="@drawable/btn_nect">
+
+        <TextView
+            android:text="Mov to Task 2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

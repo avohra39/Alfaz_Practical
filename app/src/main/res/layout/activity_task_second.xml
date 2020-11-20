@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.TaskSecond">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:padding="@dimen/_8sdp">
+
+        <EditText
+            android:id="@+id/etEnter"
+            android:layout_width="0dp"
+            android:layout_weight="60"
+            android:layout_height="wrap_content"
+            android:hint="Enter"
+            android:textSize="@dimen/_13sdp" />
+
+        <Button
+            android:layout_weight="20"
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="37"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/copyRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLR" />
+
+            <Button
+                android:id="@+id/copyLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CRL" />
+
+            <Button
+                android:id="@+id/moveRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MLR" />
+
+            <Button
+                android:id="@+id/moveLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRL" />
+
+            <Button
+                android:id="@+id/swap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swap" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="38"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:orientation="vertical"
+        android:background="@drawable/btn_nect">
+
+        <TextView
+            android:text="Move to Task 3 "
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
